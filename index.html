@@ -4,11 +4,79 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Cristofer's Home Page</title>
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <meta name="description" content="About me, photo and web certificate courses.">
+    <meta name="author" content="Cristofer Amachi">
+    <meta property="og:title" content="Cristofer's Home Page">
+    <meta property="og:description">
+    <meta property="og:image">
+    <meta property="og:url" content="">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/date.js" defer></script>
 </head>
 
 <body>
-    <h1>Hello! WDD 231</h1>
+    <header>
+        <img src="images/icon.svg" alt="icon" height="24" width="24">
+        <span>Cristofer's Site</span>
+        <button id="ham-btn" class="hamburger"></button>
+    </header>
+    <nav id="nav-bar" class="navigation">
+        <ul>
+            <li>
+                <a href="">Home</a>
+            </li>
+            <li class="current">
+                <a href="">Chamber Project</a>
+            </li>
+            <li>
+                <a href="">Final Project</a>
+            </li>
+        </ul>
+    </nav>
+    <main>
+        <h1>Home</h1>
+        <div class="card-grid"> 
+            <section class="container card-left">
+                <h2>About Me</h2><p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis, eaque.</p>
+            </section>
+            <section class="container card-right">
+                <h2>Student Photo</h2>
+                <img src="images/cristofer.jpeg" alt="student photo">
+            </section>
+            <section class="container card-bottom">
+                <h2>Web Certificate Courses</h2>
+                <div class="button-container">
+                    <button id="all">All courses</button>
+                    <button id="wdd">WDD Courses</button>
+                    <button id cse>CSE Courses</button>
+                </div>
+                <span>The total number of course listed below is</span>
+                <div class="course-grid">
+                    <div class="course">WDD 130</div>
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <div class="social">
+            <a href="" target="_blank"><img src="images/github.svg" alt="github" width="16" height="16"></a>
+            <a href="" target="_blank"><img src="images/linkedin.svg" alt="linkedin" width="16" height="16"></a>
+            <a href="" target="_blank"><img src="images/facebook.svg" alt="facebook" width="16" height="16"></a>
+        </div>
+        <span id="current-year"></span>
+        <span>Cristofer Amachi | Peru</span>
+        <br><span id="last-modified"></span>
+    </footer>
 </body>
 
 </html>
