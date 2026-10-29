@@ -7,7 +7,7 @@
 }
 
 * {
-    font-family: "Google Sans", sans-serif;
+    font-family: "Google Sans", Arial, Helvetica, sans-serif;
 }
 
 a {
@@ -30,9 +30,6 @@ header {
 }
 
 header img {
-    display: block;
-    width: 100%;
-    height: auto;
     margin: auto;
 }
 
@@ -111,9 +108,19 @@ span {
 }
 
 /* Body */
+/* 
+body {
+    margin: 0;
+} */
 
 h1 {
     padding: 0 10px;
+}
+
+.card-image-wrapper {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    overflow: hidden;
 }
 
 /* Grid */
@@ -130,7 +137,6 @@ h1 {
     
     img {
         display: block;
-        margin: 1rem auto;
         max-width: 100%;
         height: auto;
     }
@@ -180,6 +186,12 @@ footer {
     padding: 1rem 10px;
     text-align: center;
     margin-top: 1rem;
+    /* min-height: 174px; */
+
+    /* #last-modified {
+        display: block;
+        min-height: 1.2em;
+    } */
 }
 
 .social {

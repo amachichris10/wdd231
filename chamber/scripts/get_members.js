@@ -4,16 +4,8 @@ const displayCards = (list) => {
     list.forEach(item => {
         const card = document.createElement('section');
         const title = document.createElement('h2');
-        const image = document.createElement('img');
         
         title.innerHTML = item.company_name;
-        image.setAttribute('alt', item.company_name);
-        image.setAttribute('loading', 'lazy');
-        image.setAttribute('width', '200px');
-        image.setAttribute('height', '100px');
-        image.setAttribute('src', `./images/${item.image_file_name}`);
-        
-        
         card.classList.add('card')
         card.appendChild(title);
         
@@ -21,9 +13,15 @@ const displayCards = (list) => {
         <p>${item.address}</p>
         <p>${item.phone_number}</p>
         <p>${item.website_url}</p>
+        <div class="card-image-wrapper">
+            <img
+                src="./images/${item.image_file_name}" 
+                alt="${item.company_name} logo" 
+                width="300" 
+                height="200" 
+                loading="lazy">
+        </div>
         `;
-
-        card.appendChild(image);
         container.appendChild(card);
     });
 }
