@@ -1,0 +1,38 @@
+* {
+    font-family: "Google Sans", sans-serif;
+}
+
+h1 {
+    text-align: center;
+}
+
+div {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 8px;
+}
+
+section {
+    background-color: #c5daf2;
+    border-radius: .5rem;
+}
+
+h2 {
+    text-align: center;
+}
+
+p {
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+    padding-bottom: 1rem;
+}
+
+footer {
+    padding: 2rem 10px;
+    text-align: center;
+}

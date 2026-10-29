@@ -1,0 +1,41 @@
+@media screen and (min-width: 320px) {
+    body {
+        max-width: 1000px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    header {
+        grid-template-columns: 24px auto;
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+    .navigation {
+        display: block;
+    }
+
+    .navigation ul {
+        display: flex;
+    }
+
+    .navigation a {
+        border: none;
+    }
+
+    .card-grid {
+        grid-template-columns: 3fr 1fr;
+    }
+
+    .card-bottom {
+        grid-column: span 2;
+    }
+
+    .list section {
+        grid-template-columns: 200px 200px 120px 1fr;
+        gap: 2rem;
+    }
+
+}

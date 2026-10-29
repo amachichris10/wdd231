@@ -1,0 +1,58 @@
+[
+    {
+        "company_name": "Al Frío y al Fuego",
+        "address": "Av. La Marina N° 1345, Iquitos, Loreto, Peru",
+        "phone_number": "+51 65 242005",
+        "website_url": "https://alfrioyalfuego.com",
+        "image_file_name": "al-frio-y-al-fuego.webp",
+        "membership_level": 3
+    },
+    {
+        "company_name": "Fitzcarraldo Bistro Café",
+        "address": "Boulevard Alfaro 100, Iquitos, Loreto, Peru",
+        "phone_number": "+51 65 243434",
+        "website_url": "https://fitzcarraldobistro.com",
+        "image_file_name": "fitzcarraldo-bistro.webp",
+        "membership_level": 1
+    },
+    {
+        "company_name": "Amazonas Go",
+        "address": "Calle Prospero 412, Iquitos, Loreto, Peru",
+        "phone_number": "+51 65 231154",
+        "website_url": "https://amazonasgo.com",
+        "image_file_name": "amazonas-go.webp",
+        "membership_level": 2
+    },
+    {
+        "company_name": "La Patarashca",
+        "address": "Jr. Lamas 104, Tarapoto, San Martín, Peru",
+        "phone_number": "+51 42 523899",
+        "website_url": "https://lapatarashca.com",
+        "image_file_name": "la-patarashca.webp",
+        "membership_level": 3
+    },
+    {
+        "company_name": "Café d'Mundo",
+        "address": "Jr. Alegría Arias de Morey 141, Tarapoto, San Martín, Peru",
+        "phone_number": "+51 42 527341",
+        "website_url": "https://cafedmundo.pe",
+        "image_file_name": "cafe-dmundo.webp",
+        "membership_level": 1
+    },
+    {
+        "company_name": "Shaddai",
+        "address": "Av. Fitzcarraldo 450, Puerto Maldonado, Madre de Dios, Peru",
+        "phone_number": "+51 82 571022",
+        "website_url": "https://shaddai.tienda",
+        "image_file_name": "shaddai.webp",
+        "membership_level": 2
+    },
+    {
+        "company_name": "Burgos's Restaurant",
+        "address": "Plaza de Armas N° 120, Puerto Maldonado, Madre de Dios, Peru",
+        "phone_number": "+51 82 572354",
+        "website_url": "https://burgosrestaurant.pe",
+        "image_file_name": "burgoss-restaurant.webp",
+        "membership_level": 3
+    }
+]

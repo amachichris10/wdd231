@@ -1,0 +1,18 @@
+{
+    "familyName": "Amachi",
+    "dateMovedIn": "2026",
+    "numberOfPeople": 2,
+    "visitedByBishopric": false,
+    "familyMembers": [
+        {
+            "name": "Miguel Amachi",
+            "gender": "Male",
+            "bithdate": "1978"
+        },
+        {
+            "name": "Zayda Amachi",
+            "gender": "Female",
+            "bithdate": "1981"
+        }
+    ]
+}
