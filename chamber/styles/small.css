@@ -15,7 +15,7 @@ a {
 }
 
 a:visited {
-    color: black;
+    color: var(--main-color);
 }
 
 /* Header */
@@ -102,16 +102,10 @@ span {
         background-color: #ddd;
     }
 
-    img {
-        width: 30px;
-    }
 }
-
-/* Body */
-/* 
-body {
-    margin: 0;
-} */
+.button-container img {
+    width: 30px;
+}
 
 h1 {
     padding: 0 10px;
@@ -134,22 +128,20 @@ h1 {
         text-align: center;
     }
     
-    
-    img {
-        display: block;
-        max-width: 100%;
-        height: auto;
-    }
-    
     section {
         box-shadow: 2px 2px 5px 2px #ddd;
         border-radius: 1rem;
         padding: 1rem;
-    
+        
         h2 {
             text-align: center;
         }
     }
+}
+.grid img {
+    display: block;
+    max-width: 100%;
+    height: auto;
 }
 
 /* List */
@@ -158,24 +150,21 @@ h1 {
     display: flex;
     flex-direction: column;
 
-    section {
-        background-color: #eee;
-        display: grid;
-        padding: 0 1rem;
-        
-        h2 {
-            font-size: 1rem;
-            text-align: left;
-        }
-        
-        img {
-            display: none;
-        }
-
-        &:nth-child(even) {
-            background-color: #bbb;
-        }
+    &:nth-child(even) {
+        background-color: #bbb;
     }
+}
+.list h2 {
+    font-size: 1rem;
+    text-align: left;
+}
+.list section {
+    background-color: #eee;
+    display: grid;
+    padding: 0 1rem;
+}
+.list img {
+    display: none;
 }
 
 
