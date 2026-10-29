@@ -17,7 +17,7 @@ const displayCards = (list) => {
             <img
                 src="./images/${item.image_file_name}" 
                 alt="${item.company_name} logo" 
-                width="300" 
+                width="200" 
                 height="200" 
                 loading="lazy">
         </div>

@@ -129,6 +129,7 @@ h1 {
     }
     
     section {
+        min-height: 463px;
         box-shadow: 2px 2px 5px 2px #ddd;
         border-radius: 1rem;
         padding: 1rem;
@@ -140,8 +141,8 @@ h1 {
 }
 .grid img {
     display: block;
-    max-width: 100%;
     height: auto;
+    margin: 0 auto;
 }
 
 /* List */
@@ -150,9 +151,9 @@ h1 {
     display: flex;
     flex-direction: column;
 
-    &:nth-child(even) {
-        background-color: #bbb;
-    }
+}
+.list > :nth-child(even) {
+    background-color: #bbb;
 }
 .list h2 {
     font-size: 1rem;
@@ -164,6 +165,9 @@ h1 {
     padding: 0 1rem;
 }
 .list img {
+    display: none;
+}
+.list .card-image-wrapper {
     display: none;
 }
 
