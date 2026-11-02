@@ -1,0 +1,63 @@
+body {
+    background-color: black;
+}
+
+div {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border-color: gray transparent;
+    border-width: 20px;
+    border-style: solid;
+    box-shadow: 0 0 10rem rgb(0 0 255 / 40%);
+    background-color: transparent;
+    margin: 15rem auto;
+}
+
+div::after{
+    content: "⚙️";
+    font-size: 4rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+.loading {
+    animation: spin-around 2s linear infinite;
+}
+.loading::after {
+    animation: pulse 1.5s infinite ease-in-out;
+}
+
+.loading-t {
+    transition: transform 1.5s linear;
+}
+.loading-t::after {
+    transform: translate(-50%, -50%) scale(0);
+    transition: transform 1.5s ease-in-out;
+    font-size: 4rem;
+}
+.loading-t:hover {
+    transform: rotate(360deg);
+}
+.loading-t:hover::after {
+    transform: translate(-50%, -50%) scale(1.5);
+}
+
+@keyframes spin-around {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes pulse {
+    0%, 100% {
+        transform: translate(-50%, -50%) scale(1);
+    }
+    50% {
+        transform: translate(-50%, -50%) scale(1.25);
+    }
+}
