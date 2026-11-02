@@ -22,7 +22,7 @@ function displayCourses(filteredCourses) {
         courseGrid.appendChild(courseCard);
     });
 
-    count.innerHTML = `The total number of courses listed below is ${filteredCourses.length}`
+    count.innerHTML = `<br>The total number of courses listed above is ${filteredCourses.length}`
     credits.innerHTML = `Total credits required: ${filteredCourses.reduce((total, course) => {return total + course.credits}, 0)}`
 }
 
