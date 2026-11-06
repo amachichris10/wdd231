@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon's Chamber of Commerce</title>
+    <meta name="description"
+        content="Chamber of comerce is a website for local business to collaborate and grow together. It offers the most relevant news in the area.">
+    <meta name="author" content="Cristofer Amachi">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap"
+        rel="stylesheet" media="print" onload="this.media='all'">
+    <meta property="og:title" content="Directory">
+    <meta property="og:description"
+        content="Directory of business of the Amazon's Chamber of Commerce. Contact information and business logo.">
+    <meta property="og:image" content="https://amachichris10.github.io/wdd231/chamber/images/hero-large.webp">
+    <meta property="og:url" content="https://amachichris10.github.io/wdd231/chamber">
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/weather.js" defer></script>
+    <script src="scripts/index.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <img src="images/icon.svg" alt="icon" height="24" width="24">
+        <span>Amazon's Chamber of Comerece</span>
+        <button id="ham-btn" class="hamburger"></button>
+    </header>
+    <nav id="nav-bar" class="navigation">
+        <ul>
+            <li class="current">
+                <a href="#">Home</a>
+            </li>
+            <li>
+                <a href="directory.html">Directory</a>
+            </li>
+            <li>
+                <a href="#">Join</a>
+            </li>
+            <li>
+                <a href="#">Discover</a>
+            </li>
+        </ul>
+    </nav>
+    <main>
+        <div class="hero">
+            <picture>
+                <source media="(min-width: 32rem)" srcset="images/hero-large.webp">
+                <img src="images/hero-small.webp" alt="hero-image" width="512" height="300">
+            </picture>
+            <div>
+                <h1>Be part of this chamber</h1>
+                <button>Join us</button>
+            </div>
+        </div>
+        <span>Current Event</span>
+        <div class="weather">
+            <h2>Weather</h2>
+            <span id="current-temp"></span>
+            <span id="weather-desc"></span>
+            <figure>
+                <img id="weather-icon" src="" alt="">
+                <figcaption></figcaption>
+            </figure>
+        </div>
+        <div class="forecast">
+            <h2>Forecast</h2>
+            <div id="forecast"></div>
+        </div>
+        <div class="spotlights">
+            <h2>Spotlights</h2>
+            <div id="spotlights">
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="social">
+            <a href="#" target="_blank"><img src="images/github.svg" alt="github" width="16" height="16"></a>
+            <a href="#" target="_blank"><img src="images/linkedin.svg" alt="linkedin" width="16" height="16"></a>
+            <a href="#" target="_blank"><img src="images/facebook.svg" alt="facebook" width="16" height="16"></a>
+        </div>
+        <span id="current-year"></span>
+        <span>Cristofer Amachi | WDD 231</span>
+        <br><span id="last-modified"></span>
+    </footer>
+</body>
+
+</html>

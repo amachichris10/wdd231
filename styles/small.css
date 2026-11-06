@@ -124,6 +124,8 @@ h1 {
     padding: 1rem 0;
 }
 
+/* Courses */
+
 .course-grid {
     display: grid;
     gap: 8px;
@@ -135,6 +137,7 @@ h1 {
     background-color: var(--light-background);
     border-radius: 1rem;
     text-align: center;
+    border: none;
 }
 
 .completed {
@@ -191,4 +194,39 @@ footer {
 
 .social a:hover {
     background-color: var(--border-color);
+}
+
+/* Course Detail Modal */
+#course-details {
+    border: 0;
+    background: none;
+}
+#course-details > div {
+    border-radius: 1rem;
+    background-color: #ffffff;
+    box-shadow: 0 0 1em rgb(0 0 0 / 30%);
+    padding: 1em;
+    max-width: 600px;
+}
+
+#course-details h1 {
+    background-color: cadetblue;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin: 0;
+    border-radius: .5rem .5rem 0 0;
+}
+#course-details::backdrop {
+    background: rgb(0 0 0 / 70%);
+}
+
+#course-details button {
+    background-color: #eee;
+    padding: 1rem;
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    border: none;
+    cursor: pointer;
 }

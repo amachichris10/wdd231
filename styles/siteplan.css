@@ -1,0 +1,11 @@
+:root {
+    --main-color: #383737;
+    --border-color: #ddd;
+    --sec-border-color: #eee;
+    --dark-background: #171717;
+    --light-background: #eee;
+}
+
+* {
+    font-family: "Google Sans", sans-serif;
+}

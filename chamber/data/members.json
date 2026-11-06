@@ -5,7 +5,7 @@
         "phone_number": "+51 65 242005",
         "website_url": "https://alfrioyalfuego.com",
         "image_file_name": "al-frio-y-al-fuego.webp",
-        "membership_level": 3
+        "membership_level": "Gold"
     },
     {
         "company_name": "Fitzcarraldo Bistro Café",
@@ -21,7 +21,7 @@
         "phone_number": "+51 65 231154",
         "website_url": "https://amazonasgo.com",
         "image_file_name": "amazonas-go.webp",
-        "membership_level": 2
+        "membership_level": "Silver"
     },
     {
         "company_name": "La Patarashca",
@@ -29,7 +29,7 @@
         "phone_number": "+51 42 523899",
         "website_url": "https://lapatarashca.com",
         "image_file_name": "la-patarashca.webp",
-        "membership_level": 3
+        "membership_level": "Gold"
     },
     {
         "company_name": "Café d'Mundo",
@@ -45,7 +45,7 @@
         "phone_number": "+51 82 571022",
         "website_url": "https://shaddai.tienda",
         "image_file_name": "shaddai.webp",
-        "membership_level": 2
+        "membership_level": "Silver"
     },
     {
         "company_name": "Burgos's Restaurant",
@@ -53,6 +53,6 @@
         "phone_number": "+51 82 572354",
         "website_url": "https://burgosrestaurant.pe",
         "image_file_name": "burgoss-restaurant.webp",
-        "membership_level": 3
+        "membership_level": "Gold"
     }
 ]
