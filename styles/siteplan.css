@@ -7,5 +7,22 @@
 }
 
 * {
-    font-family: "Google Sans", sans-serif;
+    font-family: "Roboto", sans-serif;
+}
+
+p {
+    font-weight: 300;
+    font-size: 1.2rem;
+}
+
+/* https: //coolors.co/palette/ff9f1c-ffbf69-ffffff-cbf3f0-2ec4b6 */
+.background-main-color {
+    background-color: #ff9f1c;
+    max-width: 300px;
+    font-weight: 400;
+}
+.background-sec-color {
+    background-color: #cbf3f0;
+    max-width: 300px;
+
 }
