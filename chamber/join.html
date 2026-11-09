@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon's Chamber of Commerce Directory</title>
+    <meta name="description"
+        content="Chamber of comerce is a website for local business to collaborate and grow together. It offers the most relevant news in the area.">
+    <meta name="author" content="Cristofer Amachi">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap"
+        rel="stylesheet" media="print" onload="this.media='all'">
+    <meta property="og:title" content="Directory">
+    <meta property="og:description"
+        content="Directory of business of the Amazon's Chamber of Commerce. Contact information and business logo.">
+    <meta property="og:image" content="https://amachichris10.github.io/wdd231/chamber/images/hero-large.webp">
+    <meta property="og:url" content="https://amachichris10.github.io/wdd231/chamber">
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/join.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <img src="images/icon.svg" alt="icon" height="24" width="24">
+        <span>Amazon's Chamber of Comerece</span>
+        <button id="ham-btn" class="hamburger"></button>
+    </header>
+    <nav id="nav-bar" class="navigation">
+        <ul>
+            <li>
+                <a href="index.html">Home</a>
+            </li>
+            <li>
+                <a href="directory.html">Directory</a>
+            </li>
+            <li class="current">
+                <a href="#">Join</a>
+            </li>
+            <li>
+                <a href="#">Discover</a>
+            </li>
+        </ul>
+    </nav>
+    <main>
+        <div>
+            <h1>Be a member</h1>
+            <form action="thankyou.html" method="get">
+                <label>First Name
+                    <input type="text" required autocomplete="given-name" name="first" title="Your first name">
+                </label>
+                <label>Last Name
+                    <input type="text" required autocomplete="family-name" name="last" title="Your last name">
+                </label>
+                <label>Organizational Title
+                    <input type="text" name="title" autocomplete="organization-title" title="Your title">
+                </label>
+                <label>Email Address
+                    <input type="email" required autocomplete="email" name="email">
+                </label>
+                <label>Phone Number
+                    <input type="tel" required autocomplete="tel" name="phone">
+                </label>
+                <label>Business/Organizaztion's Name
+                    <input type="text" required autocomplete="organization" name="name">
+                </label>
+                <span>Membership Level</span>
+                <label><input type="radio" name="np" value="np">Non Profit Membership</label>
+                <label><input type="radio" name="np" value="bronze">Bronze Membership</label>
+                <label><input type="radio" name="np" value="silver">Silver Membership</label>
+                <label><input type="radio" name="np" value="gold">Gold Membership</label>
+                <label>Business/Organizaztion's Description
+                    <textarea name="desc"></textarea>
+                </label>
+                <input id="time-stamp" type="hidden" name="current-time-stamp" value="">
+                <input type="submit" value="Apply">
+            </form>
+        </div>
+        <div>
+            <h1>Membership Levels</h1>
+            <div id="levels"></div>
+        </div>
+        <dialog id="details"></dialog>
+    </main>
+    <footer>
+        <div class="social">
+            <a href="#" target="_blank"><img src="images/github.svg" alt="github" width="16" height="16"></a>
+            <a href="#" target="_blank"><img src="images/linkedin.svg" alt="linkedin" width="16" height="16"></a>
+            <a href="#" target="_blank"><img src="images/facebook.svg" alt="facebook" width="16" height="16"></a>
+        </div>
+        <span id="current-year"></span>
+        <span>Cristofer Amachi | WDD 231</span>
+        <br><span id="last-modified"></span>
+    </footer>
+</body>
+
+</html>
