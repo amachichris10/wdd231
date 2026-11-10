@@ -128,12 +128,12 @@ header span {
     padding: 0 1rem;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 1rem;
-    section {
-        min-height: 463px;
-        box-shadow: 2px 2px 5px 2px #ddd;
-        border-radius: 1rem;
-        padding: 1rem;
-    }
+}
+.grid section {
+    min-height: 463px;
+    box-shadow: 2px 2px 5px 2px #ddd;
+    border-radius: 1rem;
+    padding: 1rem;
 }
 .grid img {
     display: block;
@@ -213,7 +213,7 @@ footer {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.60);
+    background-color: #00000099;
     z-index: 2;
 }
 .hero {
@@ -248,9 +248,6 @@ footer {
     gap: 1rem;
     justify-content: center;
 }
-.forecast {
-    margin-top: 2rem;
-}
 /* Spotlights */
 #spotlights {
     display: flex;
@@ -282,15 +279,13 @@ form {
     margin: 0 10px;
     text-align: left;
 }
-form {
-    input[type="text"],
-    input[type="tel"],
-    input[type="email"],
-    textarea {
+form input[type="text"],
+form input[type="tel"],
+form input[type="email"],
+form textarea {
         display: block;
         padding: .8rem;
         font-size: 1rem;
-    }
 }
 form label {
     text-align: left;
@@ -309,11 +304,11 @@ dialog div {
     background-color: #ffffff;
     padding: 1rem;
     border-radius: 1rem;
-    box-shadow: 0 0 1em rgb(0 0 0 / 30%);
+    box-shadow: 0 0 1em #0000004d;
     max-width: 400px;
 }
 dialog::backdrop {
-    background: rgb(0 0 0 / 50%);
+    background: #00000080;
 }
 dialog button {
     position: absolute;
@@ -321,4 +316,15 @@ dialog button {
     right: 35px;
     padding: .5rem;
     cursor: pointer;
+}
+
+/* Home Page */
+.home-page-body {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+.home-page-body div {
+    width: 300px;
 }

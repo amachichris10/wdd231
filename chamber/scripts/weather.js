@@ -47,6 +47,7 @@ function displayResults(data) {
     const iconsrc = `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`;
     weatherIcon.setAttribute('src', iconsrc);
     weatherIcon.setAttribute('alt', desc);
+    weatherIcon.style.display = 'inline';
 }
 
 function displayForecast(data) {
