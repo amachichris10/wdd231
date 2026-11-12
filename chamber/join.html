@@ -48,9 +48,9 @@
             </li>
         </ul>
     </nav>
-    <main>
+    <main class="join-us-body">
         <div>
-            <h1>Be a member</h1>
+            <h1>Join Us</h1>
             <form action="thankyou.html" method="get">
                 <label>First Name
                     <input type="text" required autocomplete="given-name" name="first" title="Your first name">
@@ -59,16 +59,19 @@
                     <input type="text" required autocomplete="family-name" name="last" title="Your last name">
                 </label>
                 <label>Organizational Title
-                    <input type="text" name="title" autocomplete="organization-title" title="Your title">
+                    <input type="text" name="title" autocomplete="organization-title" title="Letters, hyphens and spaces only. Min 7 characters." 
+                    pattern="[A-Za-z\-\s]{7,}"
+                    minlength="7"
+                    >
                 </label>
                 <label>Email Address
-                    <input type="email" required autocomplete="email" name="email">
+                    <input type="email" placeholder="name@youremail.com" title="Your email address" required autocomplete="email" name="email">
                 </label>
                 <label>Phone Number
-                    <input type="tel" required autocomplete="tel" name="phone">
+                    <input type="tel" title="Your phone number" required autocomplete="tel" name="phone">
                 </label>
                 <label>Business/Organizaztion's Name
-                    <input type="text" required autocomplete="organization" name="name">
+                    <input type="text" title="Your business's name" required autocomplete="organization" name="business-name">
                 </label>
                 <span>Membership Level</span>
                 <label><input type="radio" name="np" value="np">Non Profit Membership</label>
@@ -79,7 +82,7 @@
                     <textarea name="desc"></textarea>
                 </label>
                 <input id="time-stamp" type="hidden" name="current-time-stamp" value="">
-                <input type="submit" value="Apply">
+                <input type="submit" class="main-button" value="Apply">
             </form>
         </div>
         <div>

@@ -279,6 +279,11 @@ form {
     margin: 0 10px;
     text-align: left;
 }
+form input,
+form textarea {
+    border: 1px solid #bbb;
+    border-radius: .5rem;
+}
 form input[type="text"],
 form input[type="tel"],
 form input[type="email"],
@@ -286,12 +291,73 @@ form textarea {
         display: block;
         padding: .8rem;
         font-size: 1rem;
+        width: 90%;
+}
+form textarea {
+    resize: none;
+    height: 2rem;
+}
+form label:has(input[type="radio"]) {
+    height: 3rem;
+}
+form input[type="radio"]{
+    height: 1rem;
+    width: 1rem;
 }
 form label {
     text-align: left;
 }
+form input[required] {
+    border-left: #ce0000 4px solid;
+}
+form input[type="submit"]{
+    background-color: #005596;
+    font-weight: 700;
+    color: #ffffff;
+}
+form input[type="submit"]:hover{
+    background-color: #003c6a;
+}
 
 /* Membership Modal */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+#levels {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+#levels section {
+    animation: fadeInUp 0.6s ease-out forwards;
+    opacity: 0;
+}
+#levels section:nth-child(1) {
+    animation-delay: 0.1s;
+}
+#levels section:nth-child(2) {
+    animation-delay: 0.2s;
+}
+#levels section:nth-child(3) {
+    animation-delay: 0.3s;
+}
+#levels section:nth-child(4) {
+    animation-delay: 0.4s;
+}
+#levels button{
+    background-color: #005596;
+    color: #ffffff;
+}
+#levels button:hover {
+    background-color: #003c6a;
+}
 dialog {
     text-align: left;
     background: none;
@@ -327,4 +393,39 @@ dialog button {
 }
 .home-page-body div {
     width: 300px;
+}
+
+/* Discover */
+#activities {
+    display: grid;
+    margin: 0 .5rem;
+}
+#activities img {
+    margin: 0 auto;
+}
+#activities section {
+    display: grid;
+    grid-template-areas:
+        'title'
+        'image'
+        'description'
+        'address'
+        'button'
+        ;
+}
+#activities section h2 {
+    grid-area: title;
+}
+#activities section img {
+    grid-area: image;
+}
+#activities section p {
+    grid-area: description;
+}
+#activities section address {
+    grid-area: address;
+}
+#activities section button {
+    grid-area: button;
+    margin-top: 1rem;
 }

@@ -31,7 +31,7 @@
     <header>
         <img src="images/icon.svg" alt="icon" height="24" width="24">
         <span>Amazon's Chamber of Comerece</span>
-        <button id="ham-btn" class="hamburger"></button>
+        <button id="ham-btn" class="hamburger" aria-label="menu"></button>
     </header>
     <nav id="nav-bar" class="navigation">
         <ul>
@@ -57,7 +57,7 @@
             </picture>
             <div>
                 <h1>Be part of this chamber</h1>
-                <button>Join us</button>
+                <button aria-label="join us">Join us</button>
             </div>
         </div>
         <div class="home-page-body">
@@ -69,9 +69,11 @@
             <h2>Weather</h2>
             <span id="current-temp"></span>
             <span id="weather-desc"></span>
-            <figure>
+            <figure> 
                 <img 
                 id="weather-icon"
+                width="80"
+                height="80"
                 src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" 
                 alt="Loading weather icon..." 
                 style="display: none;"

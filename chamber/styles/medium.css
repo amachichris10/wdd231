@@ -1,0 +1,11 @@
+@media screen and (min-width: 32rem) {
+    /* Discover */
+    #activities section {
+        grid-template-areas:
+            'image title'
+            'image description'
+            'image address'
+            'button button'
+        ;
+    }
+}

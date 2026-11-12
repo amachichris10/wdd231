@@ -1,4 +1,3 @@
-const timeStamp = document.querySelector('#time-stamp');
 const modal = document.querySelector('#details');
 const levels = document.querySelector('#levels');
 
@@ -46,7 +45,6 @@ const membershipLevels = [
     }
 ];
 
-
 function showModal(item) {
     modal.innerHTML = `
         <div>
@@ -83,4 +81,8 @@ function displayCards(list) {
 }
 
 displayCards(membershipLevels);
-timeStamp.value = '1'
+
+document.addEventListener('DOMContentLoaded', () => {
+    const currentTime = new Date().toISOString();
+    document.querySelector('#time-stamp').value = currentTime;
+})
