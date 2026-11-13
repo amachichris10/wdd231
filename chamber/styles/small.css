@@ -391,8 +391,9 @@ dialog button {
     flex-wrap: wrap;
     gap: 1rem;
 }
-.home-page-body div {
+.home-page-body > div {
     width: 300px;
+    min-height: 230px;
 }
 
 /* Discover */
