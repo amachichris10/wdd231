@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Amazon's Chamber of Commerce Directory</title>
+    <title>Amazon's Chamber of Commerce Join Us</title>
     <meta name="description"
         content="Join the Amazon's Chamber of Commerce with a membership level and enojy the many benefits of our community.">
     <meta name="author" content="Cristofer Amachi">
@@ -15,8 +15,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap"
-        rel="stylesheet" media="print" onload="this.media='all'">
-    <meta property="og:title" content="Directory">
+        rel="stylesheet" media="print">
+    <meta property="og:title" content="Amazon's Chamber of Commerce Join Us">
     <meta property="og:description"
         content="Join the Amazon's Chamber of Commerce with a membership level and enojy the many benefits of our community.">
     <meta property="og:image" content="https://amachichris10.github.io/wdd231/chamber/images/hero-large.webp">
@@ -28,7 +28,7 @@
 
 <body>
     <header>
-        <img src="images/icon.svg" alt="icon" height="24" width="24">
+        <img src="images/icon.svg" alt="chamber of commerce" height="24" width="24">
         <span>Amazon's Chamber of Comerece</span>
         <button id="ham-btn" class="hamburger"></button>
     </header>
@@ -79,14 +79,14 @@
                 <label><input type="radio" name="np" value="silver">Silver Membership</label>
                 <label><input type="radio" name="np" value="gold">Gold Membership</label>
                 <label>Business/Organizaztion's Description
-                    <textarea name="desc"></textarea>
+                    <textarea name="desc" title="Your business's description"></textarea>
                 </label>
                 <input id="time-stamp" type="hidden" name="current-time-stamp" value="">
                 <input type="submit" class="main-button" value="Apply">
             </form>
         </div>
         <div>
-            <h1>Membership Levels</h1>
+            <h2>Membership Levels</h2>
             <div id="levels"></div>
         </div>
         <dialog id="details"></dialog>
