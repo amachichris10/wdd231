@@ -398,6 +398,7 @@ dialog button {
 
 /* Discover */
 #activities {
+    gap: 1rem;
     display: grid;
     margin: 0 .5rem;
 }
@@ -429,4 +430,10 @@ dialog button {
 #activities section button {
     grid-area: button;
     margin-top: 1rem;
+    background-color: #005596;
+    color: #ffffff;
+    font-weight: 700;
+}
+#activities section button:hover {
+    background-color: #003c6a;
 }
